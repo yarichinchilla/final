@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;800&display=swap" rel="stylesheet">
+
+  <!-- Shoelace JavaScript -->
+  <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/shoelace.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace/dist/themes/light.css">
+
+  <!-- FullPage.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.30/fullpage.min.js" 
+    integrity="sha512-XjHDYXqFXd3cWle8uxMnQFVcpjzm+mWZfJApBAyREtai0v/jJy9Na+PJlmrnaum7qb4B3BnwKAZd47piZRvoZA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.30/fullpage.min.css">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <title>FAF</title>
+</head>
+
+
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+      <img src="images/Logointro.png" alt="Loading Animation">
+    </div>
+
+    <!-- FullPage.js Wrapper -->
+    <div id="fullpage">
+      <!-- Home Section -->
+      <div class="section section-home">
+        <img id="logo" src="images/Logointro.png" alt="Main Logo">
+        <img src="images/machinehome.png" alt="Machine Graphic" id="machine">
+        <div class="content">
+          <h2>Strongly focused on design & efficiency</h2>
+          <p>A journey of reinvention</p>
+          <sl-button variant="success" size="large" onclick="fullpage_api.moveTo(2)">More</sl-button>
+        </div>
+        <div class="logo-track">
+          <div class="logo"><img src="images/BHP_2017_logo.svg" alt="Client Logo 1"></div>
+          <div class="logo"><img src="images/WDS_BIG.svg" alt="Client Logo 2"></div>
+          <div class="logo"><img src="images/shell-logo-svg-vector.svg" alt="Client Logo 3"></div>
+          <div class="logo"><img src="images/Fortescue_Metals_Group.svg" alt="Client Logo 4"></div>
+          <div class="logo"><img src="images/BHP_2017_logo.svg" alt="Client Logo 1"></div>
+          <div class="logo"><img src="images/WDS_BIG.svg" alt="Client Logo 2"></div>
+          <div class="logo"><img src="images/shell-logo-svg-vector.svg" alt="Client Logo 3"></div>
+          <div class="logo"><img src="images/Fortescue_Metals_Group.svg" alt="Client Logo 4"></div>    <div class="logo"><img src="images/BHP_2017_logo.svg" alt="Client Logo 1"></div>
+          <div class="logo"><img src="images/WDS_BIG.svg" alt="Client Logo 2"></div>
+          <div class="logo"><img src="images/shell-logo-svg-vector.svg" alt="Client Logo 3"></div>
+          <div class="logo"><img src="images/Fortescue_Metals_Group.svg" alt="Client Logo 4"></div>
+        </div>
+      </div>
+
+      <!-- Milestone Section -->
+      <div class="section section-milestones">
+        <h1><span class="sm">LEARN ABOUT</span><br>Our Journey</h1>
+        <div class="milestone-cols">
+          <div class="milestone-col">
+            <img src="images/Untitled-1-04.svg" alt="Milestone 1 Icon" class="milestone-img">
+            <h3>Onsite Machining Began</h3>
+          </div>
+          <div class="milestone-col">
+            <img src="images/Untitled-1-05.svg" alt="Milestone 2 Icon" class="milestone-img">
+            <h3>Development of Machines</h3>
+          </div>
+          <div class="milestone-col">
+            <img src="images/Untitled-1-06.svg" alt="Milestone 3 Icon" class="milestone-img">
+            <h3>FAF Technology!</h3>
+          </div>
+          <div>
+            <h1>With over 25 years of industry experience, we create advanced technology <br>and expertly designed MACHINES built by skilled machinists</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gallery Section -->
+      <div class="section section-industries">
+        <h1>Efficient problem-solving in the Resources and Energy Industries</h1>
+        <div class="grid">
+          <div>
+            <h3>Hydroelectric</h3>
+            <img src="Images-Industries/Hydro.jpg" alt="Hydro Industry">
+          </div>
+          <div>
+            <h3>Mining</h3>
+            <img src="Images-Industries/Mines.jpg" alt="Mining Industry">
+          </div>
+          <div>
+            <h3>Offshore</h3>
+            <img src="Images-Industries/Offshore.jpg" alt="Offshore Industry">
+          </div>
+        </div>
+      </div>
+
+      <!-- Machines Section -->
+      <div class="section section-machines">
+        <h1><span class="sm">LEARN ABOUT</span><br>Our Machines</h1>
+        <div class="machines-cols">
+          <div class="machine-col">
+            <img src="Images-Machines/Balancingmachines.jpeg" alt="Machine 1 Icon" class="machine-img">
+            <h3>Balancing</h3>
+          </div>
+          <div class="machine-col">
+            <img src="Images-Machines/Flangefacing.jpeg" alt="Machine 2 Icon" class="machine-img">
+            <h3>Flange Facing</h3>
+          </div>
+          <div class="machine-col">
+            <img src="Images-Machines/smallcircularmilling.jpeg" alt="Machine 3 Icon" class="machine-img">
+            <h3>Circular Milling!</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter Section -->
+      <div class="section section-newsletter">
+        <h1>Subscribe to our Newsletter</h1>
+          <form id="subscribe-form">
+            <input type="email" id="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+      </div>
+    
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2024 YC. All rights reserved.</p>
+      </footer>
+
+    <!-- GSAP Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- Main Script -->
+    <script src="main.js"></script>
+
+</body></html>
